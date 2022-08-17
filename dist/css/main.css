@@ -281,4 +281,6 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b; }
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }

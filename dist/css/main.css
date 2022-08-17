@@ -136,9 +136,15 @@
   main {
     padding: 1rem; }
     main #home h1 {
-      margin-top: 5vh; }
+      margin-top: 5vh;
+      font-size: 7rem; }
     main .lg-heading {
       margin-top: 1rem;
+      font-size: 20px; }
+    main .contactinfo {
+      margin-top: 1rem;
+      font-size: 30px; }
+    main .text-secondary {
       font-size: 2rem; }
   .projects {
     grid-template-columns: 1fr; } }

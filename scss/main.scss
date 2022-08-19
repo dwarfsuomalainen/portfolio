@@ -4,14 +4,20 @@
 * {
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: "Comfortaa";
+  src: url("https://roman-b.com/css/font/comfortaa-variablefont_wght-webfont.woff2") format("woff2");
+  src: url("https://roman-b.com/css/font/comfortaa-variablefont_wght-webfont.woff") format("woff");
+  }
+  
+  
 body {
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Comfortaa;
   line-height: 1.5;
 }
 

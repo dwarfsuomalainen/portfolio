@@ -70,7 +70,7 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -246,6 +246,76 @@ main {
   color: #fff;
   height: 60px; }
 
+slider {
+  display: flex;
+  width: 93%;
+  height: 80%;
+  background-color: #234E70;
+  overflow: hidden;
+  position: absolute; }
+
+slider > * {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #234E70;
+  animation: slide 8s infinite;
+  overflow: hidden; }
+
+slide:nth-child(1) {
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url("/dist/img/dogs/1.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+slide:nth-child(2) {
+  animation-delay: 2s;
+  background-image: url("/dist/img/dogs/2.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+slide:nth-child(3) {
+  animation-delay: 4s;
+  background-image: url("/dist/img/dogs/3.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+slide:nth-child(4) {
+  animation-delay: 6s;
+  background-image: url("/dist/img/dogs/4.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+slide:nth-child(5) {
+  animation-delay: 8s;
+  background-image: url("/dist/img/dogs/5.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+@keyframes slide {
+  0% {
+    left: 100%;
+    width: 100%; }
+  5% {
+    left: 0%; }
+  25% {
+    left: 0%; }
+  30% {
+    left: -100%;
+    width: 100%; }
+  30.00001% {
+    left: -100%;
+    width: 0%; }
+  100% {
+    left: 100%;
+    width: 0%; } }
+
+.dog div {
+  position: absolute;
+  width: 90%; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
@@ -293,7 +363,7 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 4rem; }
+      font-size: 3rem; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }

@@ -14,12 +14,12 @@
   .menu-button.close {
     transform: rotate(180deg); }
     .menu-button.close .button-line:nth-child(1) {
-      background: red;
+      background: #fff;
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-button.close .button-line:nth-child(2) {
       opacity: 0; }
     .menu-button.close .button-line:nth-child(3) {
-      background: red;
+      background: #fff;
       transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {

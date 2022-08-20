@@ -154,6 +154,7 @@ header {
 
 main {
   padding: 1rem;
+  height: 100%;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -166,12 +167,6 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-  main .dog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35vh; }
 
 .about-info {
   display: grid;
@@ -255,11 +250,10 @@ main {
 slider {
   display: flexbox;
   width: 100%;
-  height: calc(100% - 360px);
+  height: calc(100vh - 360px);
   background-color: #234E70;
   overflow: hidden;
-  position: absolute;
-  border-radius: 10px; }
+  position: absolute; }
 
 slider > * {
   position: absolute;
@@ -274,7 +268,7 @@ slide:nth-child(1) {
   left: 0%;
   animation-delay: 1s;
   background-image: url("../img/dogs/1.jpeg");
-  background-size: cover;
+  background: 50%;
   background-position: center; }
 
 slide:nth-child(2) {
@@ -331,7 +325,13 @@ slide:nth-child(6) {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .dog {
+    padding: 0;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    height: 20vh;
+    display: flex; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -340,6 +340,11 @@ slide:nth-child(6) {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+    main .dog {
+      padding: 0;
+      margin-top: 1rem;
+      margin-left: -1rem;
+      display: flex; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -365,17 +370,20 @@ slide:nth-child(6) {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 569px) {
   main {
     padding: 2rem; }
     main #home h1 {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 3rem; }
+      font-size: 1rem; }
     main .dog {
-      margin-top: 14rem;
-      margin-bottom: 20vh; }
+      padding: 0;
+      margin-top: 1rem;
+      margin-left: -2rem;
+      display: flex;
+      height: 20vh; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }

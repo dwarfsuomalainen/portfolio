@@ -46,7 +46,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url('../img/portraitmini.jpg');
+      background: url('../img/portraitmini.jpeg');
       width: 150px;
       height: 150px;
     }
@@ -80,6 +80,9 @@
       margin-top:1rem;
       font-size: 3rem;
     }
+    .dog {margin-top: 14rem;
+    margin-bottom: 20vh;
+    }
   }
   .about-info {
     grid-template-areas:
@@ -100,5 +103,7 @@
   .projects {
     grid-template-columns: 1fr;
   }
+
+  
 
 }

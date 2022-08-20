@@ -153,7 +153,7 @@ header {
   color: #FF69B4; }
 
 main {
-  padding: 4rem;
+  padding: 1rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -166,6 +166,12 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+  main .dog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh; }
 
 .about-info {
   display: grid;
@@ -247,12 +253,13 @@ main {
   height: 60px; }
 
 slider {
-  display: flex;
-  width: 93%;
-  height: 80%;
+  display: flexbox;
+  width: 100%;
+  height: calc(100% - 360px);
   background-color: #234E70;
   overflow: hidden;
-  position: absolute; }
+  position: absolute;
+  border-radius: 10px; }
 
 slider > * {
   position: absolute;
@@ -260,12 +267,12 @@ slider > * {
   width: 100%;
   height: 100%;
   background-color: #234E70;
-  animation: slide 8s infinite;
-  overflow: hidden; }
+  animation: slide 12s infinite;
+  overflow: visible; }
 
 slide:nth-child(1) {
   left: 0%;
-  animation-delay: -1s;
+  animation-delay: 1s;
   background-image: url("../img/dogs/1.jpeg");
   background-size: cover;
   background-position: center; }
@@ -277,20 +284,26 @@ slide:nth-child(2) {
   background-position: center; }
 
 slide:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 5s;
   background-image: url("../img/dogs/3.jpeg");
   background-size: cover;
   background-position: center; }
 
 slide:nth-child(4) {
-  animation-delay: 6s;
+  animation-delay: 8s;
   background-image: url("../img/dogs/4.jpeg");
   background-size: cover;
   background-position: center; }
 
 slide:nth-child(5) {
-  animation-delay: 8s;
+  animation-delay: 11s;
   background-image: url("../img/dogs/5.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+slide:nth-child(6) {
+  animation-delay: 11s;
+  background-image: url("../img/dogs/6.jpeg");
   background-size: cover;
   background-position: center; }
 
@@ -311,10 +324,6 @@ slide:nth-child(5) {
   100% {
     left: 100%;
     width: 0%; } }
-
-.dog div {
-  position: absolute;
-  width: 90%; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -347,7 +356,7 @@ slide:nth-child(5) {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portraitmini.jpg");
+      background: url("../img/portraitmini.jpeg");
       width: 150px;
       height: 150px; }
   .about-info {
@@ -364,6 +373,9 @@ slide:nth-child(5) {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 3rem; }
+    main .dog {
+      margin-top: 14rem;
+      margin-bottom: 20vh; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }

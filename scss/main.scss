@@ -217,15 +217,15 @@ slider > * {
   width: 100%;
   height: 100%;
   background-color: $primary-color;
-  animation: slide 12s infinite;
+  animation: slide 16s infinite;
   overflow:visible;
 }
 
 slide:nth-child(1) {
   left: 0%;
-  animation-delay: 1s;
+  animation-delay: -1s;
   background-image: url("../img/dogs/1.jpeg");
-  background: 50%;
+  background: cover;
   background-position: center;
 }
 
@@ -257,7 +257,7 @@ slide:nth-child(5) {
   background-position: center;
 }
 slide:nth-child(6) {
-  animation-delay: 11s;
+  animation-delay: 13s;
   background-image: url("../img/dogs/6.jpeg");
   background-size: cover;
   background-position: center;

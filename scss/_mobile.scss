@@ -21,6 +21,7 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 30px;
     }
   }
 
@@ -34,13 +35,12 @@
       transform: translate3d(0, 0, 0);
     }
   }
-
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
+    font-size: 18px;
   }
-
+  
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
@@ -66,6 +66,9 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  #slider {
+    width: 150%;
+  }
 }
 
 // Smartphones
@@ -78,8 +81,9 @@
 
     .lg-heading {
       margin-top: 1rem;
-      font-size: 1rem;
+      font-size: 2rem;
     }
+
   }
   .about-info {
     grid-template-areas:
@@ -94,10 +98,28 @@
   .contactinfo {
     font-size: 18px;
   }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 16px;
+  }
   .text-secondary {
     font-size: 40px;
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  #slider {
+    width: 100%;
   }
 }

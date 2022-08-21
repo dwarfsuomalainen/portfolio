@@ -116,7 +116,7 @@ body {
     background-size: cover; }
     body#bg-img:after {
       content: '';
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;
@@ -181,6 +181,8 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+  .about-info .bio-text {
+    text-align: justify; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -252,7 +254,7 @@ main {
   flex-direction: column; }
 
 slider {
-  background-color: #234e70;
+  background-color: #234E70;
   overflow: hidden;
   position: relative;
   max-height: 100vh;
@@ -260,11 +262,11 @@ slider {
 
 slider > * {
   position: absolute;
-  display: block;
+  display: blo;
   max-width: 100%;
-  background-color: #234e70;
+  background-color: #234E70;
   animation: slide 16s infinite;
-  overflow: visible;
+  overflow: hidden;
   aspect-ratio: 4/3;
   max-height: 100vh; }
 
@@ -337,7 +339,8 @@ slide:nth-child(6) {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 30px; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -349,7 +352,7 @@ slide:nth-child(6) {
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
+    font-size: 18px; }
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
@@ -361,7 +364,9 @@ slide:nth-child(6) {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #slider {
+    width: 150%; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -370,13 +375,27 @@ slide:nth-child(6) {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 1rem; }
+      font-size: 2rem; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .contactinfo {
     font-size: 18px; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 16px; }
   .text-secondary {
     font-size: 40px; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #slider {
+    width: 100%; } }

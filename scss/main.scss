@@ -100,7 +100,9 @@ main {
     grid-area: bio;
     font-size: 1.5rem;
   }
-
+  .bio-text {
+    text-align: justify;
+  }
   .job-1 {
     grid-area: job1;
   }
@@ -199,12 +201,12 @@ main {
 // Slider dogs photos slideshow (responsive)
 
 .dog {
-  display: flex;
+  display:flex;
   flex-direction: column;
 }
 
 slider {
-  background-color: #234e70;
+  background-color: $primary-color;
   overflow: hidden;
   position: relative;
   max-height: 100vh;
@@ -213,11 +215,11 @@ slider {
 
 slider > * {
   position: absolute;
-  display: block;
+  display: blo;
   max-width: 100%;
-  background-color: #234e70;
+  background-color: $primary-color;
   animation: slide 16s infinite;
-  overflow: visible;
+  overflow:hidden;
   aspect-ratio: 4/3;
   max-height: 100vh;
 }

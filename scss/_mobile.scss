@@ -1,3 +1,4 @@
+
 // Widescreens
 @include mediaXl {
   .projects {
@@ -66,8 +67,8 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-  #slider {
-    width: 150%;
+  .dog {
+    justify-content: center;
   }
 }
 
@@ -118,8 +119,5 @@
   }
   .projects {
     grid-template-columns: 1fr;
-  }
-  #slider {
-    width: 100%;
   }
 }

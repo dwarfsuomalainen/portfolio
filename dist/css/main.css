@@ -365,8 +365,8 @@ slide:nth-child(6) {
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
-  #slider {
-    width: 150%; } }
+  .dog {
+    justify-content: center; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -396,6 +396,4 @@ slide:nth-child(6) {
   .text-secondary {
     font-size: 40px; }
   .projects {
-    grid-template-columns: 1fr; }
-  #slider {
-    width: 100%; } }
+    grid-template-columns: 1fr; } }

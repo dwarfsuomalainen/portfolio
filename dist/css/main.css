@@ -183,6 +183,8 @@ main {
     font-size: 1.5rem; }
   .about-info .bio-text {
     text-align: justify; }
+  .about-info .bio-text2 {
+    text-align: justify; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -193,6 +195,9 @@ main {
     background: #295c83;
     padding: 0.5rem;
     border-bottom: #FF69B4 5px solid; }
+  .about-info .bio-text:before {
+    color: #FF69B4;
+    content: "My "; }
 
 .projects {
   display: grid;
@@ -327,9 +332,7 @@ slide:nth-child(6) {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
-  .text-secondary {
-    font-size: 100px; } }
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {

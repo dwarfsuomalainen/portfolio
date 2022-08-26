@@ -103,6 +103,11 @@ main {
   .bio-text {
     text-align: justify;
   }
+
+  .bio-text2 {
+    text-align: justify;
+  }
+  
   .job-1 {
     grid-area: job1;
   }
@@ -119,6 +124,10 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+  .bio-text:before {
+    color: $secondary-color;
+    content: "My ";
   }
 }
 

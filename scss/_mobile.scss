@@ -1,4 +1,3 @@
-
 // Widescreens
 @include mediaXl {
   .projects {
@@ -8,7 +7,6 @@
   .text-secondary-contact {
     font-size: 40px;
   }
-  
 }
 
 // Desktops & Laptops
@@ -46,7 +44,7 @@
     transform: translate3d(-100%, 0, 0);
     font-size: 18px;
   }
-  
+
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
@@ -89,7 +87,6 @@
       margin-top: 1rem;
       font-size: 2rem;
     }
-
   }
   .about-info {
     grid-template-areas:

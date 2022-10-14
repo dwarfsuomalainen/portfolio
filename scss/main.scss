@@ -107,7 +107,7 @@ main {
   .bio-text2 {
     text-align: justify;
   }
-  
+
   .job-1 {
     grid-area: job1;
   }
@@ -210,7 +210,7 @@ main {
 // Slider dogs photos slideshow (responsive)
 
 .dog {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -228,7 +228,7 @@ slider > * {
   max-width: 100%;
   background-color: $primary-color;
   animation: slide 16s infinite;
-  overflow:hidden;
+  overflow: hidden;
   aspect-ratio: 4/3;
   max-height: 100vh;
 }

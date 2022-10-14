@@ -98,11 +98,6 @@
 * {
   box-sizing: border-box; }
 
-@font-face {
-  font-family: "Comfortaa";
-  src: url("../dist/css/font/comfortaa-variablefont_wght-webfont.woff2") format("woff2");
-  src: url("../dist/css/font/comfortaa-variablefont_wght-webfont.woff") format("woff"); }
-
 body {
   background: #234E70;
   color: #fff;

@@ -16,6 +16,9 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+  .job-1 {
+    justify-content: center;
+  }
 }
 
 // Tablets & Small Laptops
@@ -68,7 +71,9 @@
 
     grid-template-columns: 1fr;
   }
-
+  .job-1 {
+    justify-content: center;
+  }
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -100,6 +105,9 @@
       "job3";
 
     grid-template-columns: 1fr;
+  }
+  .job-1 {
+    justify-content: center;
   }
   .contactinfo {
     font-size: 18px;

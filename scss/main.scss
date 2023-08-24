@@ -106,6 +106,7 @@ main {
 
   .job-1 {
     grid-area: job1;
+    justify-content: center;
   }
 
   .job-2 {
@@ -214,10 +215,12 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  filter: drop-shadow(3px 3px 10px grey);
 
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
+    filter: drop-shadow(3px 3px 10px $secondary-color);
     @include easeOut;
   }
 }

@@ -18,8 +18,9 @@
     "url": "https://github.com/dwarfsuomalainen/porfolio/issues"
   },
   "dependencies": {
+    "fix": "^0.0.6",
     "gh-pages": "^4.0.0",
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.3",
     "sass": "^1.55.0"
   }
 }

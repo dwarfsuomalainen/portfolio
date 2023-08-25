@@ -181,8 +181,7 @@ main {
   .about-info .bio-text2 {
     text-align: justify; }
   .about-info .job-1 {
-    grid-area: job1;
-    justify-content: center; }
+    grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
   .about-info .job-3 {
@@ -251,6 +250,7 @@ main {
   color: #333; }
 
 .btncv {
+  width: 300px;
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
@@ -365,6 +365,15 @@ slide:nth-child(6) {
       line-height: 1;
       margin-bottom: 1rem;
       font-size: 30px; }
+    main .cv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      width: 50%;
+      padding: 10px; }
+    main .btncv {
+      width: 300px; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -424,4 +433,13 @@ slide:nth-child(6) {
   .text-secondary {
     font-size: 40px; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px; }
+  .btncv {
+    width: 300px; } }

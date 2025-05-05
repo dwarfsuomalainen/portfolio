@@ -1,4 +1,4 @@
-# First Project of own portfolio website [https://roman-b.com](https://dwarfsuomalainen.github.io/portfolio/)
+# First project of own portfolio website (retired) [live](https://dwarfsuomalainen.github.io/portfolio/)
 
 Here is a small project of frontend skills. 
 Very simple portfolio website, contains:
